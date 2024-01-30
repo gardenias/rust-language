@@ -92,7 +92,7 @@ fn main() {
         area(&rect),
         Rectangle::area2(&rect)
     );
-    
+
     // dbg!(&rect);
 
     let rect1 = Rectangle {
