@@ -45,7 +45,7 @@ fn main() {
     }
 
     //Option result
-    let does_not_exist = v3.get(100);
+    let _does_not_exist = v3.get(100);
     // panicked at 'index out of bounds'
     // let does_not_exist = &v3[100];
 
@@ -80,26 +80,26 @@ fn main() {
 
     println!("Let’s move on to the next collection type: String!");
 
-    let mut s = String::new();
+    let _s = String::new();
 
     let data = "initial contents";
-    let s = data.to_string();
+    let _s = data.to_string();
     // the method also works on a literal directly:
-    let s = "initial contents".to_string();
-    let s = String::from("initial contents");
+    let _s = "initial contents".to_string();
+    let _s = String::from("initial contents");
 
     // UTF-8
-    let hello = String::from("السلام عليكم");
-    let hello = String::from("Dobrý den");
-    let hello = String::from("Hello");
-    let hello = String::from("שָׁלוֹם");
-    let hello = String::from("नमस्ते");
-    let hello = String::from("こんにちは");
-    let hello = String::from("안녕하세요");
-    let hello = String::from("你好");
-    let hello = String::from("Olá");
-    let hello = String::from("Здравствуйте");
-    let hello = String::from("Hola");
+    let _hello = String::from("السلام عليكم");
+    let _hello = String::from("Dobrý den");
+    let _hello = String::from("Hello");
+    let _hello = String::from("שָׁלוֹם");
+    let _hello = String::from("नमस्ते");
+    let _hello = String::from("こんにちは");
+    let _hello = String::from("안녕하세요");
+    let _hello = String::from("你好");
+    let _hello = String::from("Olá");
+    let _hello = String::from("Здравствуйте");
+    let _hello = String::from("Hola");
 
     let mut s = String::from("foo");
     s.push_str("bar");
@@ -120,7 +120,7 @@ fn main() {
 
     let s = format!("{s1}-{s2}-{s3}");
     println!("s is {s}");
-    let s1 = String::from("hello");
+    let _s1 = String::from("hello");
     let hello = "Здравствуйте";
     let answer = &hello[0..6];
     println!("{answer}");
