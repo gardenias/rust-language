@@ -1,5 +1,22 @@
+use core::fmt;
 use std::collections::HashMap;
+use std::fmt::Result;
+use std::io;
+use std::io::Result as IOResult;
 
+fn f1() -> fmt::Result {
+    fmt::Result::Ok(())
+}
+fn f2() -> io::Result<()> {
+    io::Result::Ok(())
+}
+
+fn f3() -> Result {
+    Result::Ok(())
+}
+fn f4() -> IOResult<()> {
+    IOResult::Ok(())
+}
 fn main() {
     let mut v: Vec<i32> = Vec::new();
 
@@ -147,7 +164,10 @@ fn main() {
     scores.entry(String::from("Yellow")).or_insert(50);
     scores.entry(String::from("Blue")).or_insert(50);
 
-    println!("Adding a Key and Value Only If a Key Isn’t Present by call entry method: {:?}", scores);
+    println!(
+        "Adding a Key and Value Only If a Key Isn’t Present by call entry method: {:?}",
+        scores
+    );
 
     let text = "hello world wonderful world";
 
@@ -156,6 +176,11 @@ fn main() {
         let count = map.entry(word).or_insert(0);
         *count += 1;
     }
+
+    println!("{:?}", map);
+
+    let mut map = HashMap::new();
+    map.insert(1, 2);
 
     println!("{:?}", map);
 }
