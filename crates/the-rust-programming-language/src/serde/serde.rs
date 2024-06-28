@@ -28,4 +28,8 @@ fn main() {
     let result = untyped_example();
     let value = result.unwrap();
     println!("{:?}", value);
+
+    let num: u64 = 12;
+    num as i64;
+    println!("{num}");
 }

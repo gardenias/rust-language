@@ -1,0 +1,11 @@
+pub mod ch01_getting_started;
+pub mod ch02_guessing_game_tutorial;
+pub mod ch04_understanding_ownership;
+pub mod ch05_structs;
+pub mod ch06_enums;
+pub mod ch08_common_collections;
+pub mod ch09_error_handling;
+pub mod ch10_generics;
+pub mod ch11_testing;
+pub mod ch12_an_io_project;
+pub mod ch13_closures;

@@ -36,7 +36,7 @@ mod back_of_house {
 
 pub fn eat_at_restaurant() {
     // Absolute path
-    crate::front_of_house::hosting::add_to_wait_list();
+    front_of_house::hosting::add_to_wait_list();
 
     // Relative path
     front_of_house::hosting::add_to_wait_list();
@@ -58,7 +58,7 @@ pub fn eat_at_restaurant() {
 }
 
 mod customer {
-    use crate::front_of_house::hosting;
+    use crate::some::front_of_house::hosting;
 
     pub fn eat_at_restaurant() {
         hosting::add_to_wait_list();

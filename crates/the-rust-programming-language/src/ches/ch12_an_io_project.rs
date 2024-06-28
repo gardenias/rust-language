@@ -1,5 +1,5 @@
-use rl::{run, Config};
 use std::{env, ffi::OsString, process};
+use crate::some::{Config, run};
 
 fn main() {
     let args: Vec<OsString> = env::args_os().collect();
